@@ -9,11 +9,22 @@
       </li>
     </ul>
     <router-view/>
+    <footers @eventa="getEventa" dataname="iam home"></footers>
   </div>
+  
 </template>
 
 <script>
+import footers from "../components/footer.vue";
 export default {
   name: 'Home',
+  components:{
+    footers
+  },
+  methods:{
+    getEventa(value){
+      console.log(value)
+    }
+  }
 }
 </script>

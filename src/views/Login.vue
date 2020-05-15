@@ -10,8 +10,7 @@
       <span>用户名</span><input type="text">
       <span>密码</span><input type="text">
       <span>再次输入密码</span><input type="text">
-      <button type="button" @click="login()">登录</button>
-      <button type="button" @click="reg()">注册</button>
+      <button type="button" @click="login()">注册</button>
     </form>
   </div>
 </template>
