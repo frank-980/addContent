@@ -3,6 +3,11 @@
        {{parm}}
        {{dataname}}
        <button @click="emitEventa">footer</button>
+       <div class="slots">
+            <slot name="slot1">no slot1</slot>
+            <p>something</p>
+            <slot name="slot2">no slot2</slot>
+        </div>
     </div>
 </template>
 <script>
@@ -20,3 +25,8 @@ export default {
     }
 }
 </script>
+<style>
+    .slots{
+        border:2px solid black
+    }
+</style>
